@@ -1,0 +1,260 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'poppins',sans-serif;
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;    
+box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.navbar-links
+{
+    display: flex;
+    column-gap: 20px;
+
+}
+
+.navbar-links a{
+    text-decoration: none;
+    color: #1D23DC;
+}
+
+.navbar-links a:hover{
+    text-decoration: underline;
+    color: #1D23DC;
+}
+
+.navbar-link-toggle{
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    .navbar-link-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    } 
+}
+
+.side-navbar{
+    background-color: black;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left:-60%;
+    padding: 20px;
+    color: aliceblue;
+   transition: 1s;
+
+}
+.cross-mark{
+  text-align: right ;
+}
+.side-navbar-link{
+    margin-bottom: 30px;
+}
+
+
+.side-navbar-links a{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.side-navbar-links a:hover{
+  text-decoration: underline;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.header-btn{
+    background-color:#1D23DC;
+    border-radius: 10%;
+     color: aliceblue;
+     padding: 10px 15px;
+     margin-top: 10px;
+     cursor: pointer;
+}
+
+@media screen  and (max-width:600px){
+    .header-img{
+        display: none;
+    }
+    .service-container{
+        display: none;
+    }
+    .service-container-2{
+        flex-direction: column;
+    }
+
+}
+
+.service{
+    padding: 20px;
+}
+
+.service-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+.service-container-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.service-container-2 div{
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.new-arrival{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.new-arrival-container{
+    flex-basis: 20%;
+    position: relative;
+}
+
+.arrivaltitle{
+    padding: 20px;
+}
+
+.new-arrival button{
+    position: absolute;
+    padding: 10% 5%;
+    color:aliceblue;
+    background-color: darkslategrey;
+   margin-top: 10%;
+   top: 40%;
+   left: 18%;
+   border-radius: 10px;
+   border: none;
+}
+
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news input{
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: solid black 3px;
+}
+
+.news button{
+    margin-top: 10px;
+    color: aliceblue;
+    background-color: #1D23DC;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+
+.footer{
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 20px;
+    padding: 40px;
+    background-color: #1D23DC;
+    color: bisque;
+    
+}
+
+.product-section{
+  margin-top: 20px;
+}
+
+.product-search{
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.product-search input{
+    border: none;
+    background-color:transparent ;
+    width: 100%;
+}
+
+.product-search input:focus{
+    outline: none;
+}
+
+.productssets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.products-set{
+    text-align: center;
+    flex-basis: 30%;
+}
+
+.products-set img{
+    border-radius: 10px;
+}
+
+.contact-container{
+    background-color:black;
+    color: antiquewhite;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 20px;
+    margin: 40px auto;
+    width: 60%;
+    
+}
+
+.contact-container input,textarea{
+    width: 100%;
+    flex-basis: 30%;
+}
+
+.contact-container button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+}

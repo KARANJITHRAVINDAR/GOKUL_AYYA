@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="head">
+        <h1>TODO LIST</h1>
+    </div>
+    <div class="inputbar">
+        <form>
+        <input id="input" required>
+        <button onclick="addItem()">ADD TO LIST</button>
+        </form>
+    </div>
+   
+ <div class="list">
+        <ul id="todo">
+            <li>DO WORKOUT
+                <button onclick="deleteItem(event)">COMPLETED</button>
+            </li>
+
+        </ul>
+        </div>
+</body>
+</html>
+<script>
+    var input = document.getElementById("input")
+    var todo = document.getElementById("todo")
+    function addItem() {
+        var LIST = document.createElement("li")
+        LIST.innerHTML = input.value +
+            "<button onclick='deleteItem(event)'>COMPLETED</button>"
+        todo.append(LIST)
+        input.value = ""
+    }
+
+    function deleteItem(event) {
+        event.target.parentElement.remove()
+    }
+</script>

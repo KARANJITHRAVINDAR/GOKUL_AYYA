@@ -1,0 +1,171 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+nav {
+    background-color: rgba(255, 68, 0, 0.795);
+    color: greenyellow;
+    padding: 15px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.top,button{
+    text-decoration: none;
+    position: fixed;
+    right: 0%;
+    bottom: 0%;
+    background-color: darkblue;
+    color: white;
+    font-family: cursive;
+    
+
+}
+nav img {
+    width: 150px;
+    height: 150px;
+}
+
+nav li,
+h1,
+ul {
+    display: inline;
+}
+
+ul {
+    margin-left: 60%;
+    padding: 10px;
+
+}
+
+li {
+    color: grey;
+    cursor: pointer;
+}
+
+li:hover {
+    color: goldenrod;
+}
+
+input {
+    width: 300px;
+    padding: 15px;
+}
+
+.searchbar {
+    padding: 50px;
+    text-align: center;
+    color: black;
+}
+
+img {
+    width: 300px;
+    height: 250px;
+
+}
+
+nav {
+    position: relative;
+    height: 100px;
+
+}
+
+nav img {
+    display: inline;
+    position: absolute;
+    left: 0%;
+    height: 150px;
+    width: 150px;
+    z-index: 1;
+}
+
+nav h1 {
+    display: inline-block;
+    position: absolute;
+    color: beige;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 2;
+    left: 150px;
+    top: 75px;
+}
+
+nav p {
+    display: inline-block;
+    position: absolute;
+    color: greenyellow;
+
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 2;
+    left: 150px;
+    top: 100px;
+}
+
+.products {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+
+.box {
+    display: inline-block;
+    width: 300px;
+    height: fit-content;
+    margin: 10px;
+    border: solid black 2px;
+    cursor: pointer;
+    flex-basis: 30%;
+    justify-content: space-around;
+
+}
+
+.box:hover {
+    background-color: black;
+    color: beige;
+}
+
+.about {
+    background-color: black;
+    color: antiquewhite;
+    text-align: center;
+}
+
+.about h1 {
+    color: greenyellow;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.about p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+
+.Contact {
+    background-color: goldenrod;
+    top: 10px;
+    left: 10px;
+    color: azure;
+    padding: 20px;
+}
+
+.Contact ul {
+    display: inline-block;
+
+    top: 20px;
+    left: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Contact li {
+    display: block;
+    color: azure;
+}
